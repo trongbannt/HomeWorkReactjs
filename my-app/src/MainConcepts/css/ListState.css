@@ -1,0 +1,11 @@
+.btn-circle {
+    width: 20px;
+    height: 20px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 6px;
+    z-index: 10;
+    margin-top: -220px;
+    margin-left: 435px;
+}

@@ -4,6 +4,7 @@ import Calculator from './MainConcepts/lifting-state-up';
 import Person from './MainConcepts/Person'
 import { Button } from 'react-bootstrap';
 import Hook from "./MainConcepts/Hook"
+import ListState from "./MainConcepts/ListState"
 
 class App extends Component {
 
@@ -29,18 +30,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Calculator></Calculator>
-        <Person
-          name={this.state.name}
-          age={this.state.age}
-          click={this.up.bind(this, this.state.age + 1)}
-          changeName={this.changeNameHandler}
-        >
-        </Person>
-        <br/>
-        <Button variant="success" onClick={() => this.up(this.state.age + 1)}>Up</Button>
-        <Hook></Hook>
-
+        <div className="left-side">
+          <div className="section" ><Calculator/></div>
+          <div className="section" >
+            <h3>List & State</h3>
+            <ListState></ListState>
+          </div>
+        </div>
+        <div className="right-side">
+          <div className="section" >
+            <Person
+              name={this.state.name}
+              age={this.state.age}
+              click={this.up.bind(this, this.state.age + 1)}
+              changeName={this.changeNameHandler}
+            > </Person>
+            <Button variant="success" onClick={() => this.up(this.state.age + 1)}>Up</Button></div>
+          <div className="section" > <Hook></Hook></div>
+        </div>
       </div>
     );
   }
