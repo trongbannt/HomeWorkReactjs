@@ -6,6 +6,11 @@
     text-align: center;
     font-size: 6px;
     z-index: 10;
-    margin-top: -220px;
-    margin-left: 435px;
+    position: absolute;
+    top: 5px;
+    right: 15px
+}
+
+.panel_box{
+    position: relative;
 }
