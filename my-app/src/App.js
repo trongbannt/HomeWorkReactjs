@@ -5,6 +5,7 @@ import Person from './MainConcepts/Person'
 import { Button } from 'react-bootstrap';
 import Hook from "./MainConcepts/Hook"
 import ListState from "./MainConcepts/ListState"
+import FormTest from './Components/Form/FormTest'
 
 class App extends Component {
 
@@ -47,6 +48,7 @@ class App extends Component {
             > </Person>
             <Button variant="success" onClick={() => this.up(this.state.age + 1)}>Up</Button></div>
           <div className="section" > <Hook></Hook></div>
+          <div className="section" > <FormTest></FormTest></div>
         </div>
       </div>
     );
