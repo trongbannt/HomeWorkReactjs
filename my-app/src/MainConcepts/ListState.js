@@ -41,6 +41,7 @@ class ListState extends Component {
                             <Person
                                 name={i.name}
                                 age={i.age}
+                                currentValue={i.name}
                                 changeName={(event, id) => { this.changeNameHandler(event, i.id) }}
                             />
                             <button type='button' className='btn btn-danger btn-circle' onClick={() => this.deletePersonHandler(index)}>X</button>
