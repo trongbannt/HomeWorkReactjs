@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Layout from './components/layout/Layout';
+import Layout from './containers/layout/Layout';
+import BurgerBuilder from './containers/burgerBuilder/BurgerBuilder';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
     //   <h1>Start</h1>
     // </div>
     <Layout>
-      
+      <BurgerBuilder />
     </Layout>
   );
 }
